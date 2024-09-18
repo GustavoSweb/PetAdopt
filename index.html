@@ -6,23 +6,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
-  <body class="overflow-y-hidden px-[100px]">
+  <body class="overflow-x-hidden px-[10px] lg:px-[100px] pt-[20px]">
     <header>
-      <nav class="flex">
-        <section id="LogoPetAdopt" class="bg-[url()]"></section>
-        <ul id="LinksNav" class="flex flex-col lg:flex-row gap-[25px]">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>About Us</li>
-          <li>About</li>
-          <li>About</li>
-          <li>About</li>
-          <li>About</li>
+      <nav class="flex items-center justify-between">
+        <section id="LogoPetAdopt" class="w-[70px]">
+          <img src="./public/image/logo.svg" alt="" c />
+        </section>
+        <ul
+          id="LinksNav"
+          class="flex flex-col lg:flex-row gap-[25px] text-[#2D2D2D] relative"
+        >
+          <li>
+            <img
+              src="./public/image/pata.svg"
+              alt=""
+              class="w-[20px] absolute top-[25px]"
+            />
+          </li>
+          <li class="menuLink hover:text-black transform-all delay-250">
+            Home
+          </li>
+          <li class="menuLink hover:text-black transform-all delay-250">
+            About Us
+          </li>
+          <li class="menuLink hover:text-black transform-all delay-250">
+            About Us
+          </li>
+          <li class="menuLink hover:text-black transform-all delay-250">
+            About
+          </li>
+          <li class="menuLink hover:text-black transform-all delay-250">
+            About
+          </li>
+          <li class="menuLink hover:text-black transform-all delay-250">
+            About
+          </li>
+          <li class="menuLink hover:text-black transform-all delay-250">
+            About
+          </li>
         </ul>
       </nav>
     </header>
     <section class="flex flex-wrap justify-center align-center h-dvh w-full">
-      <section class="flex justify-around align-center w-full">
+      <section class="flex flex-wrap justify-around align-center w-full">
         <section
           class="flex flex-col justify-center align-start w-[50%] text-start"
         >
@@ -37,9 +63,36 @@
             repellendus iure, hic quod enim nostrum commodi. Numquam omnis
             reprehenderit temporibus?
           </p>
+          <button
+            class="text-white text-center uppercase font-bold bg-[#A0E3F2] w-fit px-[30px] py-[6px] rounded-[7px] mt-[20px]"
+          >
+            Quero adotar meu pet
+          </button>
         </section>
-        <section class="flex align-center justify-center w-[50%]"></section>
+        <div class="h-full flex justify-center items-center w-[50%]">
+          <img src="./public/image/imagemdogcat.png" alt="" srcset="" />
+        </div>
       </section>
     </section>
+    <main>
+      <section
+        class="h-dvh w-full flex flex-col flex-wrap justify-center align-start"
+      >
+        <div class="flex flex-col flex-wrap justify-center items-center">
+          <h1 class="text-[55px] font-bold text-center text-black">
+            Our Services
+          </h1>
+          <p
+            class="font-light text-center text-[14px] mt-[20px] w-[100%] max-w-[550px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+            corrupti, voluptatibus odio natus sed consequuntur numquam beatae?
+            Ipsa nesciunt voluptate deserunt dolore distinctio, delectus ex!
+            Doloribus corrupti debitis veritatis totam!
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./public/js/index.js"></script>
   </body>
 </html>
