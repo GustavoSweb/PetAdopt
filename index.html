@@ -6,22 +6,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
-  <body class="overflow-x-hidden px-[10px] lg:px-[100px] pt-[20px]">
+  <body class="overflow-x-hidden px-[25px] lg:px-[100px] pt-[20px]">
     <header>
-      <nav class="flex items-center justify-between">
+      <nav class="flex items-center justify-between fixed w-[90%]">
         <section id="LogoPetAdopt" class="w-[70px]">
-          <img src="./public/image/logo.svg" alt="" c />
+          <img src="./public/image/logo.svg" alt="" />
         </section>
         <ul
           id="LinksNav"
           class="flex flex-col lg:flex-row gap-[25px] text-[#2D2D2D] relative"
         >
-          <li>
-            <img
-              src="./public/image/pata.svg"
-              alt=""
-              class="w-[20px] absolute top-[25px]"
-            />
+          <li class="absolute w-[20px] top-[30px] left-[10px]" id="PawPet">
+            <img src="./public/image/pata.svg" alt="" class="" />
           </li>
           <li class="menuLink hover:text-black transform-all delay-250">
             Home
@@ -47,10 +43,13 @@
         </ul>
       </nav>
     </header>
-    <section class="flex flex-wrap justify-center align-center h-dvh w-full">
+    <section
+      class="flex flex-wrap justify-center align-center h-dvh w-full"
+      id="SectionMain"
+    >
       <section class="flex flex-wrap justify-around align-center w-full">
         <section
-          class="flex flex-col justify-center align-start w-[50%] text-start"
+          class="flex flex-col justify-center align-start w-full lg:w-[50%] text-start"
         >
           <h1 class="text-[75px] font-bold text-black leading-[72px]">
             Find Your<br /><span class="text-[75px] font-bold text-[#A0E3F2]"
@@ -69,7 +68,7 @@
             Quero adotar meu pet
           </button>
         </section>
-        <div class="h-full flex justify-center items-center w-[50%]">
+        <div class="h-full flex content-center w-[50%] hidden lg:block">
           <img src="./public/image/imagemdogcat.png" alt="" srcset="" />
         </div>
       </section>
@@ -77,8 +76,9 @@
     <main>
       <section
         class="h-dvh w-full flex flex-col flex-wrap justify-center align-start"
+        id="SectionServices"
       >
-        <div class="flex flex-col flex-wrap justify-center items-center">
+        <div class="flex flex-col flex-wrap content-center w-full">
           <h1 class="text-[55px] font-bold text-center text-black">
             Our Services
           </h1>
@@ -91,6 +91,61 @@
             Doloribus corrupti debitis veritatis totam!
           </p>
         </div>
+        <section
+          class="flex flex-row flex-wrap text-center align-center justify-around w-full mt-[80px]"
+        >
+          <div
+            class="flex flex-col content-center items-center text-center w-[30%]"
+          >
+            <img
+              src="./public/image/1000303026-removebg-preview.png"
+              alt=""
+              srcset=""
+              class="w-[200px] h-[200px]"
+            />
+            <h1 class="text-center font-bold text-[25px] mt-[10px]">
+              Services One
+            </h1>
+            <p class="mt-[10px] text-[14px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              quis ipsum amet sint, voluptas itaque
+            </p>
+          </div>
+          <div
+            class="flex flex-col content-center items-center text-center w-[30%]"
+          >
+            <img
+              src="./public/image/1000303027-removebg-preview.png"
+              alt=""
+              srcset=""
+              class="w-[200px] h-[200px]"
+            />
+            <h1 class="text-center font-bold text-[25px] mt-[10px]">
+              Services Two
+            </h1>
+            <p class="mt-[10px] text-[14px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              quis ipsum amet sint, voluptas itaque
+            </p>
+          </div>
+          <div
+            class="flex flex-col content-center items-center text-center w-[30%]"
+          >
+            <img
+              src="./public/image/1000303028-removebg-preview.png"
+              alt=""
+              srcset=""
+              class="w-[200px] h-[200px]"
+            />
+            <h1 class="text-center font-bold text-[25px] mt-[10px]">
+              Services Three
+            </h1>
+            <p class="mt-[10px] text-[14px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              quis ipsum amet sint, voluptas itaque
+            </p>
+          </div>
+        </section>
       </section>
     </main>
     <script src="./public/js/index.js"></script>
