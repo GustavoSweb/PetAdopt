@@ -1,5 +1,1 @@
-# PetAdopt
-
-Landing page desenvolvida utilizando tailwind
-
-# #ffffff , #A0E3F2 , #F23D5E , #F2CF63
+WARNING: current commit information was not captured by the build: failed to read current commit information with git rev-parse --is-inside-work-tree ERROR: failed to solve: failed to read dockerfile: failed to mount /var/lib/docker/tmp/buildkit-mount1338188232: [{Type:bind Source:/var/lib/docker/overlay2/x2slejtbd7jnmkb4y8nur77q9/diff Target: Options:[rbind ro]}]: no such file or directory
