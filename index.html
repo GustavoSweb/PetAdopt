@@ -8,7 +8,9 @@
   </head>
   <body class="overflow-x-hidden px-[25px] lg:px-[100px] pt-[20px]">
     <header>
-      <nav class="flex items-center justify-between fixed w-[90%]">
+      <nav
+        class="flex items-center justify-between fixed w-[calc(100%-50px)] lg:w-[90%]"
+      >
         <section id="LogoPetAdopt" class="w-[70px]">
           <img src="./public/image/logo.svg" alt="" />
         </section>
@@ -41,6 +43,7 @@
             About
           </li>
         </ul>
+        <div id="ButtonOpenMenu" class="lg:hidden"></div>
       </nav>
     </header>
     <section
@@ -75,10 +78,10 @@
     </section>
     <main>
       <section
-        class="h-dvh w-full flex flex-col flex-wrap justify-center align-start"
+        class="w-full flex flex-col flex-wrap justify-center align-start w-full"
         id="SectionServices"
       >
-        <div class="flex flex-col flex-wrap content-center w-full">
+        <div class="flex flex-col items-center justify-center">
           <h1 class="text-[55px] font-bold text-center text-black">
             Our Services
           </h1>
@@ -92,11 +95,9 @@
           </p>
         </div>
         <section
-          class="flex flex-row flex-wrap text-center align-center justify-around w-full mt-[80px]"
+          class="flex flex-col lg:flex-row flex-wrap text-center align-center justify-around mt-[80px]"
         >
-          <div
-            class="flex flex-col content-center items-center text-center w-[30%]"
-          >
+          <div class="flex flex-col items-center text-center">
             <img
               src="./public/image/1000303026-removebg-preview.png"
               alt=""
@@ -106,14 +107,12 @@
             <h1 class="text-center font-bold text-[25px] mt-[10px]">
               Services One
             </h1>
-            <p class="mt-[10px] text-[14px]">
+            <p class="mt-[10px] text-[14px] text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
               quis ipsum amet sint, voluptas itaque
             </p>
           </div>
-          <div
-            class="flex flex-col content-center items-center text-center w-[30%]"
-          >
+          <div class="flex flex-col items-center text-center">
             <img
               src="./public/image/1000303027-removebg-preview.png"
               alt=""
@@ -128,9 +127,7 @@
               quis ipsum amet sint, voluptas itaque
             </p>
           </div>
-          <div
-            class="flex flex-col content-center items-center text-center w-[30%]"
-          >
+          <div class="flex flex-col items-center text-center">
             <img
               src="./public/image/1000303028-removebg-preview.png"
               alt=""

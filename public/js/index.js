@@ -6,7 +6,6 @@ var value_main = 0;
 var value_main_left = 0;
 var value_pawpet = ["15px", "85px"];
 document.addEventListener("scroll", () => {
-  console.log("Teste-" + SectionMain.getBoundingClientRect().top);
   if (SectionServices.getBoundingClientRect().top < 60) {
     return (PawPet.style.left = value_pawpet[1]);
   }
